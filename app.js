@@ -9,7 +9,7 @@ function Ajouter() {
 
 function Vider() {
   Table = [];
-  
+  afficherResultat();
 }
 
 function random() {
@@ -20,4 +20,9 @@ function random() {
   } else {
     alert("Ajoutez des mots !!");
   }
+}
+
+function afficherResultat() {
+  var resultatParagraphe = document.getElementById('resultat');
+  resultatParagraphe.innerHTML =  Table.join('<br>');
 }
