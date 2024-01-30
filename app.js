@@ -6,3 +6,8 @@ function Ajouter() {
   afficherResultat();
   document.getElementById('inputText').value = ''; 
 }
+
+function Vider() {
+  Table = [];
+  
+}
